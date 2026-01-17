@@ -113,7 +113,7 @@
 ### Responsive Breakpoints
 
 - **Small device:** up to 576 px 
-- **Medium Device:** 576px to 992 px 
+- **Medium Device:** 576px to 992 px (Optional)
 - **Large Device:** above 992 px 
 
 
