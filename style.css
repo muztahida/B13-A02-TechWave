@@ -10,7 +10,7 @@ body {
   color: #fff;
 }
 
-/* HEADER */
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -40,36 +40,29 @@ body {
   text-decoration: none;
 }
 
-/* HERO */
+
 .hero {
   position: relative;
-  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
 }
+.hero1{
+  position:relative;
+  
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
 .circle {
-  background: url(assets/hero-bg.png);
+  
+  width: 70%;
   display: flex;
   align-items: center;
   justify-content: center;
   
 }
-.circle img {
-  width: 70px;
-}
-
-.badge {
-  position: absolute;
-  background: #22ff88;
-  color: #000;
-  padding: 5px 10px;
-  border-radius: 10px;
-  font-size: 12px;
-  transform: translate(90px, -10px);
-}
-
 .hero h1 {
   margin-top: 20px;
   font-size: 42px;
@@ -170,7 +163,9 @@ body {
   opacity: 0.7;
   line-height: 1.6;
 }
-/* Featured Episodes */
+
+
+
 .featured {
   padding: 60px 8%;
 }
@@ -214,7 +209,7 @@ body {
   color: #00ff9c;
 }
 
-/* Host */
+
 .host {
   padding: 60px 8%;
 }
@@ -240,13 +235,7 @@ body {
   object-fit: cover;
 }
 
-.socials a {
-  margin-right: 15px;
-  color: #ff4ecd;
-  text-decoration: none;
-}
 
-/* Footer */
 footer {
   text-align: center;
   padding: 40px 8%;
@@ -272,4 +261,226 @@ footer p {
   margin-top: 15px;
   font-size: 14px;
   opacity: 0.6;
+}
+
+@media (max-width: 768px) {
+
+  body {
+    overflow-x: hidden;
+  }
+
+  .header {
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px;
+  }
+
+  nav {
+    display: flex;
+    gap: 15px;
+  }
+
+  .subscribe-btn {
+    padding: 10px 18px;
+  }
+
+  
+  .hero {
+    padding: 40px 15px;
+    text-align: center;
+  }
+
+  .hero1 h1 {
+    font-size: 36px;
+  }
+
+  .hero1 p {
+    font-size: 15px;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .circle img {
+    width: 220px;
+  }
+
+  
+  .about {
+    padding: 40px 15px;
+  }
+
+  .stats {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  
+  .why {
+    padding: 40px 15px;
+  }
+
+  .why-grid {
+    grid-template-columns: 1fr;
+  }
+
+ 
+  .featured {
+    padding: 40px 15px;
+  }
+
+  .episode-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .episode-card img {
+    height: 200px;
+    object-fit: cover;
+  }
+
+  
+  
+  .host {
+    padding: 40px 15px;
+  }
+
+  .host-card {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .host-card img {
+    width: 160px;
+  }
+
+  
+  footer {
+    padding: 30px 15px;
+    text-align: center;
+  }
+
+  .platforms {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+  }
+}
+
+
+@media (max-width: 992px) {
+
+  
+  .header {
+    padding: 18px 40px;
+  }
+
+  .logo {
+    font-size: 24px;
+  }
+
+  nav a {
+    margin: 0 10px;
+    font-size: 15px;
+  }
+
+  .subscribe-btn {
+    padding: 10px 22px;
+    font-size: 14px;
+  }
+
+  
+  .hero {
+    padding: 60px 30px;
+  }
+
+  .hero1 h1 {
+    font-size: 52px;
+  }
+
+  .hero1 p {
+    font-size: 17px;
+    max-width: 520px;
+    margin: 15px auto;
+  }
+
+  .circle img {
+    width: 300px;
+  }
+
+  .hero-buttons {
+    gap: 15px;
+  }
+
+  .btn {
+    padding: 12px 26px;
+    font-size: 15px;
+  }
+
+  
+  .about {
+    padding: 60px 30px;
+  }
+
+  .about p {
+    max-width: 700px;
+    font-size: 16px;
+  }
+
+  .stats {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+
+  
+  .why {
+    padding: 60px 30px;
+  }
+
+  .why-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+  }
+
+  
+  .featured {
+    padding: 60px 30px;
+  }
+
+  .episode-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+  }
+
+  .episode-card img {
+    height: 220px;
+  }
+
+  
+  .host {
+    padding: 60px 30px;
+  }
+
+  .host-card {
+    max-width: 700px;
+    gap: 25px;
+  }
+
+  .host-card img {
+    width: 180px;
+  }
+
+  footer {
+    padding: 40px 30px;
+  }
+
+  footer h1 {
+    font-size: 30px;
+  }
+
+  .platforms span {
+    font-size: 14px;
+  }
 }
