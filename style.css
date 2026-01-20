@@ -1,3 +1,275 @@
-body{
-    color: chocolate;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #0e0524;
+  color: #fff;
+}
+
+/* HEADER */
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 60px;
+  align-items: center;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+}
+.logo span {
+  color: #ff4ecd;
+}
+
+.header nav a {
+  margin: 0 15px;
+  color: #aaa;
+  text-decoration: none;
+}
+
+.subscribe-btn {
+  background: linear-gradient(135deg,#ff4ecd,#ffa44b);
+  padding: 8px 18px;
+  border-radius: 20px;
+  color: #fff;
+  text-decoration: none;
+}
+
+/* HERO */
+.hero {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.circle {
+  background: url(assets/hero-bg.png);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+.circle img {
+  width: 70px;
+}
+
+.badge {
+  position: absolute;
+  background: #22ff88;
+  color: #000;
+  padding: 5px 10px;
+  border-radius: 10px;
+  font-size: 12px;
+  transform: translate(90px, -10px);
+}
+
+.hero h1 {
+  margin-top: 20px;
+  font-size: 42px;
+}
+
+.hero p {
+  opacity: 0.7;
+  margin: 15px 0 25px;
+}
+
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.btn {
+  padding: 12px 22px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.primary {
+  background: linear-gradient(135deg,#ff4ecd,#ffa44b);
+  color: #fff;
+}
+.outline {
+  border: 1px solid #4adeff;
+  color: #4adeff;
+}
+.about {
+  padding: 100px 80px;
+  text-align: center;
+}
+.about h2 {
+  font-size: 34px;
+  margin-bottom: 20px;
+}
+.about p {
+  max-width: 800px;
+  margin: auto;
+  opacity: 0.7;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 60px;
+}
+.stat h3 {
+  color: #22ff88;
+  font-size: 28px;
+}
+.stat span {
+  font-size: 12px;
+  opacity: 0.6;
+}
+.why {
+  padding: 100px 80px;
+}
+
+.why h2 {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 60px;
+}
+.why-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  max-width: 1000px;
+  margin: auto;
+}
+.why-card {
+  background: linear-gradient(
+    180deg,
+    rgba(255,255,255,0.05),
+    rgba(255,255,255,0.02)
+  );
+  padding: 35px;
+  border-radius: 18px;
+  backdrop-filter: blur(8px);
+}
+
+.why-card img {
+  width: 42px;
+  margin-bottom: 15px;
+}
+
+.why-card h4 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.why-card p {
+  font-size: 14px;
+  opacity: 0.7;
+  line-height: 1.6;
+}
+/* Featured Episodes */
+.featured {
+  padding: 60px 8%;
+}
+
+.featured h2 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.episode-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+}
+
+.episode-card {
+  background: #2b124c;
+  border-radius: 14px;
+  padding: 15px;
+}
+
+.episode-card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.episode-card h3 {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.episode-card p {
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+.episode-card span {
+  display: inline-block;
+  margin-top: 10px;
+  color: #00ff9c;
+}
+
+/* Host */
+.host {
+  padding: 60px 8%;
+}
+
+.host h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.host-card {
+  display: flex;
+  gap: 20px;
+  background: #2b124c;
+  padding: 25px;
+  border-radius: 16px;
+  align-items: center;
+}
+
+.host-card img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.socials a {
+  margin-right: 15px;
+  color: #ff4ecd;
+  text-decoration: none;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 40px 8%;
+  margin-top: 60px;
+  background: url(assets/footer-bg.png);
+}
+
+footer h1 {
+  font-size: 36px;
+  margin-bottom: 15px;
+}
+
+footer h1 span {
+  color: #ff4ecd;
+}
+
+.platforms span {
+  margin: 0 10px;
+  opacity: 0.8;
+}
+
+footer p {
+  margin-top: 15px;
+  font-size: 14px;
+  opacity: 0.6;
 }
